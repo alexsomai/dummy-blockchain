@@ -1,1 +1,1 @@
-chain: python3 blockchain.py
+web: python3 blockchain.py
