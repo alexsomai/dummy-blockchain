@@ -1,11 +1,11 @@
 import hashlib
 import json
-import requests
-
-from textwrap import dedent
+import os
 from time import time
-from uuid import uuid4
 from urllib.parse import urlparse
+from uuid import uuid4
+
+import requests
 from flask import Flask, jsonify, request
 
 
@@ -272,6 +272,7 @@ def consensus():
 
     return jsonify(response), 200
 
+
 if __name__ == '__main__':
-    from os import environ
-    app.run(host='0.0.0.0', port=environ.get("PORT", 5000))
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
