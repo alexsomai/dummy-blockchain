@@ -1,6 +1,6 @@
-# Dummy blockchain implementation
+# Dummy Python Blockchain
 
-A dummy implementation of blockchain with Python
+A dummy implementation of blockchain with Python.
 
 I've followed the steps from this Medium article 'Learn Blockchains by Building One' https://hackernoon.com/learn-blockchains-by-building-one-117428612f46
 
